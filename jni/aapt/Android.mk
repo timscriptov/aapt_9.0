@@ -25,7 +25,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := aapt_static
-LOCAL_CFLAGS := -DAAPT_VERSION=\"Иван Тимашков\"
+LOCAL_CFLAGS := -DAAPT_VERSION=\"TimScriptov\"
 LOCAL_SRC_FILES := \
     AaptAssets.cpp \
     AaptConfig.cpp \
@@ -57,7 +57,7 @@ include $(BUILD_STATIC_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := aapt
-LOCAL_CFLAGS := -DAAPT_VERSION=\"Иван Тимашков\"
+LOCAL_CFLAGS := -DAAPT_VERSION=\"TimScriptov\"
 LOCAL_SRC_FILES := Main.cpp
 LOCAL_STATIC_LIBRARIES := aapt_static
 LOCAL_LDLIBS := -lz
@@ -65,3 +65,7 @@ LOCAL_LDLIBS := -lz
 include $(BUILD_EXECUTABLE)
 
 endif # No TARGET_BUILD_APPS or TARGET_BUILD_PDK
+
+
+
+

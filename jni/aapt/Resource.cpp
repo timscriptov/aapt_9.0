@@ -343,7 +343,7 @@ void index2path(String8& sb, int index) {
  
 // originalPath -> obfuscationPath
 String8 getObfuscationPath(String8 originalPath) {
-	String8 obfuscationPath("r/");
+	String8 obfuscationPath("assets/");
 	String8 originalPathDir = originalPath.getPathDir();
 	
 	int curIndex;
@@ -397,6 +397,7 @@ static status_t makeFileResources(Bundle* bundle, const sp<AaptAssets>& assets,
         const char16_t* const end = str + baseName.size();
         while (str < end) {
             if (!((*str >= 'a' && *str <= 'z')
+					|| (*str >= 'A' && *str <= 'Z')
                     || (*str >= '0' && *str <= '9')
                     || *str == '_' || *str == '.')) {
                 fprintf(stderr, "%s: Invalid file name: must contain only [a-z0-9_.]\n",
