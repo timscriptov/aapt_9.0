@@ -1,14 +1,7 @@
 
 AAPT с шифрованием ресурсов
 
-
-
-
-
-
-
-
-
+DEPRECATED!
 
 ### Collaborators
 > [Zhong Yin][1]<br>
